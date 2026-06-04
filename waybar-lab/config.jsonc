@@ -2,7 +2,7 @@
     "layer": "top",
     "modules-left": ["hyprland/workspaces", "hyprland/mode", "hyprland/window"],
     "modules-center": ["clock"],
-    "modules-right": ["pulseaudio", "pulseaudio/slider"],
+    "modules-right": ["pulseaudio", "pulseaudio/slider", "cpu", "custom/power"],
     "hyprland/window": {
         "max-length": 50
     },
@@ -10,15 +10,15 @@
    "hyprland/workspaces": {
   	"format": "{icon}",
   	"on-click": "activate",
+	"persistent-workspaces": {
+		"*": 5
+	},
   	"format-icons": {
-    		"1": "",
-    		"2": "",
-    		"3": "",
-    		"4": "",
-    		"5": "",
-    		"urgent": "",
-    		"active": "",
-    		"default": ""
+    		"1": "1",
+    		"2": "2",
+    		"3": "3",
+    		"4": "4",
+    		"5": "5"
   		},
   	"sort-by-number": true
 	},
@@ -73,5 +73,24 @@
     	"min": 0,
     	"max": 100,
     	"orientation": "horizontal"
-	}	
+	},
+
+	"cpu": {
+	    "interval": 1,
+	    "format": " 󰍛 {usage}% ",
+	    "max-lenght": 10
+	},
+
+	"custom/power": {
+    		"format" : "⏻ ",
+        	"tooltip": false,
+        	"menu": "on-click",
+        	"menu-file": "~/.config/waybar-lab/power_menu.xml",
+        	"menu-actions": {
+            	"shutdown": "shutdown",
+            	"reboot": "reboot",
+            	"suspend": "systemctl suspend",
+            	"hibernate": "systemctl hibernate"
+        	}
+	}
 }
