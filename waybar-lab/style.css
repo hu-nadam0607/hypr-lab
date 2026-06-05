@@ -14,7 +14,6 @@ window#waybar {
     background-color: transparent;
     color: #ffffff;
     border: none;
-    padding-bottom: 12px;
 }
 
 button {
@@ -32,10 +31,11 @@ button:hover {
     background-color: @dark-9;
     border: 2px solid #663399;
     border-radius: 7px;
+    box-shadow: inset 0px 0px 4px 1.7px rgba(102, 51, 153, 0.8);
 }
 
 #workspaces button {
-    padding: 3px;
+    padding: 0px 1px 0px 0px;
     margin: 5px 5px 5px 5px;
     background: transparent;
     border-radius: 2px;
@@ -43,19 +43,24 @@ button:hover {
 }
 
 #workspaces button.active{
-    background: @highlight;
-    color: black;
+    /*background: @highlight;*/
+    color: #663399;
     font-weight: 700;
+    border: 2px solid #663399;
+    border-radius: 5px;
 }
 
 #clock {
     margin-top: 10px;
+    margin-bottom: 0px;
+    margin-right: 12px;
+    margin-left: 12;
     padding: 0px 0px 0px 10px;
     color: #ffffff;
     background-color: @dark-9;
     border: 2px solid #663399;
     border-radius: 7px;
-    box-shadow: 0px 4px 8px 0px rgba(203, 166, 247, 0.4);
+    box-shadow: inset 0px 0px 4px 1.7px rgba(102, 51, 153, 0.8);
 }
 
 .modules-right {
@@ -63,6 +68,7 @@ button:hover {
 	margin: 10px 10px 0px 10px;
 	border: 2px solid #663399;
 	border-radius: 7px;
+	box-shadow: inset 0px 0px 4px 1.7px rgba(102, 51, 153, 0.8);
 }
 
 #pulseaudio {
@@ -99,3 +105,18 @@ button:hover {
     color: #ffffff;
 }
 
+#window {
+    background-color: @dark-9;
+    border: 2px solid #663399;
+    margin: 10px 0px 0px 0px;
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: inset 0px 0px 4px 1.7px rgba(102, 51, 153, 0.8);
+}
+
+#custom-power {
+    margin: 0px 0px 0px 0px;
+    border-left: 2px solid #663399;
+    padding-left: 10px;
+    box-shadow: inset 0px 0px 4px 0.5px rgba(102, 51, 153, 0.5);
+}
