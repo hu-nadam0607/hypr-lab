@@ -1,0 +1,46 @@
+window {
+    location: northeast;
+    anchor: northeast;
+    x-offset: -20;
+    y-offset: 60;
+    width: 250;
+    border-radius: 16;
+    border: 2;
+    border-color: #7A22FF;
+    background-color: #11111BCC;
+}
+
+mainbox {
+    padding: 15;
+    background-color: #11111B;
+    children: [ listview ];
+}
+
+listview {
+    lines: 4;
+    fixed-height: true;
+    dynamic: false;
+    scrollbar: false;
+    background-color: #11111B;
+    spacing: 6;
+}
+
+element {
+    padding: 8;
+    border-radius: 10;
+    background-color: #11111B;
+}
+
+element-text {
+    background-color: #11111B;
+    text-color: #CDD6F4;
+}
+
+element selected {
+    background-color: #985EFF;
+}
+
+element-text selected {
+    background-color: transparent;
+    text-color: #000000;
+}
