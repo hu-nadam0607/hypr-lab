@@ -2,7 +2,7 @@
     "layer": "top",
     "modules-left": ["hyprland/workspaces", "hyprland/mode", "hyprland/window"],
     "modules-center": ["clock"],
-    "modules-right": ["pulseaudio", "pulseaudio/slider", "cpu", "custom/power"],
+    "modules-right": ["pulseaudio", "pulseaudio/slider", "cpu", "tray", "custom/power"],
     "hyprland/window": {
         "max-length": 50
     },
@@ -79,6 +79,11 @@
 	    "interval": 1,
 	    "format": " 󰍛 {usage}% ",
 	    "max-lenght": 10
+	},
+
+	"tray": {
+	    "icon-size": 16,
+	    "spacing": 10
 	},
 
 	"custom/power": {
