@@ -1,0 +1,71 @@
+window {
+    location: center;
+    anchor: center;
+    width: 650;
+    height: 100;
+    border-radius: 50;      /* Markáns pirula lekerekítés */
+    border: 2;    
+    background-color: transparent;
+}
+
+/* Fő doboz, ami vízszintesen egymás mellé rakja a bal és jobb oldalt */
+mainbox {
+    orientation: horizontal;
+    background-color: transparent;
+    children: [ inputbar, listview ];
+}
+
+/* ================= BAL OLDAL: BEVITELI MEZŐ ================= */
+inputbar {
+    width: 220;
+    padding: 27 35;
+    background-color: transparent; /* Sötétgrafit háttér a bal oldali sávnak */
+    vertical-align: 15;
+    children: [ entry ];
+}
+
+/* Maga a keresőmező stílusa */
+entry {
+    background-color: #11111B;
+    text-color: #CDD6F4;
+    padding: 12;
+    border-radius: 50;      /* Kis pirula a beviteli mezőnek */
+    border: 2;
+    border-color: #663399;
+    placeholder: " Search...";
+    placeholder-color: #585B70;
+}
+
+/* ================= JOBB OLDAL: TALÁLATI LISTA ================= */
+listview {
+    padding: 28;
+    scrollbar: false;
+    background-color: transparent;
+    layout: vertical;
+    spacing: 6;
+    fixed-height: false;
+}
+
+/* Találati elemek (alkalmazások gombjai) */
+element {
+    padding: 10 15;
+    border-radius: 18;      /* Lekerekített sarkok a gomboknak */
+    background-color: #11111B;
+}
+
+/* Szöveg a gombokon belül */
+element-text {
+    background-color: transparent;
+    text-color: #CDD6F4;
+}
+
+/* Amikor ráviszed az egeret vagy rálépsz a nyíllal (Selected/Hover) */
+element selected {
+    border: 2px;
+    border-color: #663399; /* Lila kijelölés */
+}
+
+element-text selected {
+    background-color: transparent;
+    text-color: #FFFFFF;       /* Fehér szöveg a lila háttéren */
+}

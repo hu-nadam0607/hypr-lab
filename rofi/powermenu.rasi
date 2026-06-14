@@ -1,12 +1,12 @@
 window {
     location: northeast;
     anchor: northeast;
-    x-offset: -20;
-    y-offset: 60;
+    x-offset: -10;
+    y-offset: 10;
     width: 250;
-    border-radius: 16;
+    border-radius: 5;
     border: 2;
-    border-color: #7A22FF;
+    border-color: #663399;
     background-color: #11111BCC;
 }
 
@@ -33,14 +33,17 @@ element {
 
 element-text {
     background-color: #11111B;
-    text-color: #CDD6F4;
+    text-color: #663399;
 }
 
 element selected {
-    background-color: #985EFF;
+    background-color: transparent;
+    border: 2px;
+    border-radius: 5px;
+    border-color: #663399;
 }
 
 element-text selected {
     background-color: transparent;
-    text-color: #000000;
+    text-color: #ffffff;
 }
