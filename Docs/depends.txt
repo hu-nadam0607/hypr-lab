@@ -20,3 +20,4 @@ hyprcursor
 hyprlang
 hyprpaper
 pavucontrol
+vivaldi browser (default)

@@ -1,0 +1,19 @@
+## ⚙️ Quick Installation
+
+> ⚠️ **Important:** Hypr-Lab is built directly on top of **Hypr**, **Waybar**, and **Rofi**. Make sure you install the required packages from `Docs/Depends.txt` first! The following steps will overwrite your stock configurations. Back them up if needed.
+
+### Option A: Via Terminal (Git Clone)
+Run these commands to clone the repo to a temporary folder and copy the Hypr-Lab files into your configuration directory:
+
+```bash
+git clone [https://github.com/hu-nadam0607/hypr-lab.git](https://github.com/hu-nadam0607/hypr-lab.git) /tmp/hypr-lab
+cd /tmp/hypr-lab
+cp -r hypr/ waybar/ rofi/ ~/.config/
+
+## Option B: Via GitHub Web (ZIP Download)
+Go to hu-nadam0607/hypr-lab and click Code -> Download ZIP.
+
+Extract the archive.
+
+Open a terminal inside the extracted folder (where the hypr, waybar, and rofi directories are located) and run:
+cp -r hypr/ waybar/ rofi/ ~/.config/

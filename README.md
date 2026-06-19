@@ -51,7 +51,7 @@ That being said, constructive criticism, feedback, and ideas are always welcome!
 
 1. **Dependencies:** You **must** install everything listed in the `Docs/Depends.txt` file before running the environment. Missing dependencies *will* cause issues or system breakage.
 2. **Keybindings:** After installation, you can find a complete list of all currently active and usable shortcuts in the `Docs/keybindings.txt` file.
-
+3. **Installation:** Read this documentation to know, how to install Hypr-Lab.
 ---
 
 Thank you for checking out my project!
