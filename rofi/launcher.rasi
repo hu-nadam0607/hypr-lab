@@ -17,10 +17,9 @@ mainbox {
 
 /* ================= BAL OLDAL: BEVITELI MEZŐ ================= */
 inputbar {
-    width: 220;
-    padding: 27 35;
-    background-color: transparent; /* Sötétgrafit háttér a bal oldali sávnak */
-    vertical-align: 15;
+    width: 250;                     /* Kicsit növelt szélesség, hogy kényelmesebb legyen */
+    padding: 24 0 24 35;            /* Felül/alul 24px, jobb oldalt 0, bal oldalt 35px */
+    background-color: transparent; 
     children: [ entry ];
 }
 
@@ -28,44 +27,49 @@ inputbar {
 entry {
     background-color: #11111B;
     text-color: #CDD6F4;
-    padding: 12;
-    border-radius: 50;      /* Kis pirula a beviteli mezőnek */
+    padding: 12 15;                 /* Pontos belső margó */
+    border-radius: 50;      
     border: 2;
     border-color: #663399;
-    placeholder: " Search...";
+    placeholder: "Search...";
     placeholder-color: #585B70;
+    vertical-align: 0.5;            /* A placeholder szöveg függőlegesen középre zárása */
 }
 
 /* ================= JOBB OLDAL: TALÁLATI LISTA ================= */
 listview {
-    padding: 28;
+    padding: 24 35 24 20;           /* Összehangolt padding (Felül/alul 24px, mint a bal oldalon) */
     scrollbar: false;
     background-color: transparent;
-    layout: vertical;
-    spacing: 6;
-    fixed-height: false;
+    layout: horizontal;             /* FONTOS: Vízszintes elrendezés, hogy egy sorban legyenek */
+    spacing: 10;
+    fixed-height: true;
 }
 
 /* Találati elemek (alkalmazások gombjai) */
 element {
-    padding: 10 15;
-    border-radius: 18;      /* Lekerekített sarkok a gomboknak */
+    padding: 12 20;                 /* Ugyanaz a függőleges padding (12), mint az entry-nél */
+    border-radius: 50;              /* Ugyanúgy pirula (50), mint a keresőmező */
     background-color: #11111B;
+    border: 2;                      /* Alapból is kell a border, különben ugrálni fog kijelöléskor */
+    border-color: #11111B;          /* Rejtett border, ami megegyezik a háttérrel */
 }
 
 /* Szöveg a gombokon belül */
 element-text {
     background-color: transparent;
     text-color: #CDD6F4;
+    vertical-align: 0.5;            /* Szöveg középre igazítása függőlegesen */
 }
 
 /* Amikor ráviszed az egeret vagy rálépsz a nyíllal (Selected/Hover) */
 element selected {
-    border: 2px;
-    border-color: #663399; /* Lila kijelölés */
+    border: 2;
+    border-color: #663399;          /* Lila kijelölés */
+    background-color: #11111B;
 }
 
 element-text selected {
     background-color: transparent;
-    text-color: #FFFFFF;       /* Fehér szöveg a lila háttéren */
+    text-color: #FFFFFF;           /* Fehér szöveg a lila kerettel */
 }

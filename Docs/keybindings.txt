@@ -1,0 +1,51 @@
+  _   _                      _          _     
+ | | | |_   _ _ __  _ __    | |    __ _| |__  
+ | |_| | | | | '_ \| '__|---| |   / _` | '_ \ 
+ |  _  | |_| | |_) | |  |---| |__| (_| | |_) |
+ |_| |_|\__, | .__/|_|      |_____\__,_|_.__/ 
+        |___/|_|      
+
+!!!THE KEYBOARD DEFAULT LANGUAGE IS HUNGARIAN!!! --> PLEASE CHANGE YOURSELF IN CONFIG FILE!
+
+$mainKey = SUPER (Super key is the Windows button on the keyboard)
+
+$mainKey + C                        Open terminal
+$mainKey + M                        Quit Hypr-Lab
+$mainKey + B                        Open Browser (default Vivaldi)
+$mainKey + E                        Open filemanager (Nautilus)
+$mainKey + ALT + A                  Border animation on/off (default on)
+$mainKey + Q                        Kill active window
+
+Fn + dedicated volume up button     Volume Up
+Fn + dedicated volume down button   Volume Down
+Fn + dedicated next button          Step next music
+Fn + dedicated previous button      Previous music
+Fn + dedicated play/pause button    Play/Pause music
+
+$mainKey + W                        Manual wallpaper change
+
+$mainKey + P                        Open power menu (navigate narrow buttons)
+
+$mainKey + Shift + S                Screenshot to selected area
+$mainKey + Shift + A                Screenshot to fullscreen
+
+$mainKey + 1, 2, 3, 4, 5            Change workspaces /* more workspace adding to the future :) */
+$mainKey + Shift + 1, 2, 3, 4, 5    Move app to the prefered workspace
+
+$mainKey + CTRL + right             Riseze to the active window right
+$mainKey + CTRL + left              Riseze to the active window left
+$mainKey + CTRL + down              Riseze to the active window down
+$mainKey + CTRL + up                Riseze to the active window up
+$mainKey + Left mouse button        Move the active window with mouse
+$mainKey + Right mouse button       Resize the active window with mouse
+
+$mainKey + T                        Toggle/floating the active window
+$mainKey + F                        Fullscreen the active window
+
+$mainKey + left                     Left window focus
+$mainKey + right                    Right window focus
+$mainKey + up                       Top window focus
+$mainKey + down                     Bottom window focus
+
+$mainKey + J                        Toggle split
+$mainKey + K                        Swap split
