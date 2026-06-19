@@ -1,7 +1,7 @@
 # 💜 Hypr-Lab
 
 Hypr-Lab is an evolving desktop environment built on top of the **Hyprland** tiling window manager. 
-
+Tested on Vanilla Arch and recommended for installation!
 ---
 
 ## 🚀 About the Project
