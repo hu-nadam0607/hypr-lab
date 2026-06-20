@@ -21,3 +21,4 @@ hyprlang
 hyprpaper
 pavucontrol
 vivaldi browser (default)
+nautilus filemanager
